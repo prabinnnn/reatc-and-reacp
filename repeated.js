@@ -1,20 +1,14 @@
-const maxCharacter = (strings) => {
-  const charMap = {};
-  let max = 0,
-    maxChar = "";
-  const combinedString = strings.join("");
-
-  for (let char of combinedString) {
-    charMap[char] = charMap[char] + 1 || 1;
-  }
-
-  for (let char in charMap) {
-    if (charMap[char] > max) {
-      max = charMap[char];
-      maxChar = char;
+const repeatedCharacter = (strings) => {
+  let count = 0;
+  let vcount = "";
+  const firstChar = strings[0];
+  for (let i = 1; i < strings.length - 5; i++) {
+    if (strings[i][0] === firstChar) {
+      vcount += firstChar;
+      count++;
     }
   }
-
-  return maxChar;
+  return vcount;
 };
-console.log(maxCharacter("find", "findland", "finish"));
+
+console.log(repeatedCharacter("find", "finland", "finish"));
