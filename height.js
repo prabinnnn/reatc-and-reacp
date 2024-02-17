@@ -29,4 +29,5 @@ const characters = [
   },
 ];
 const height = characters.map((char) => char.height);
-console.log(height);
+const eye = characters.map((char) => char.eye_color);
+console.log(height, eye);
