@@ -28,6 +28,8 @@ const characters = [
     gender: "male",
   },
 ];
-const height = characters.map((char) => char.height);
-const eye = characters.map((char) => char.eye_color);
-console.log(height, eye);
+// const height = characters.map((char) => char.height);
+// const eye = characters.map((char) => char.eye_color);
+// console.log(height, eye);
+const firstName = characters.map((char) => char.name);
+console.log(firstName);
