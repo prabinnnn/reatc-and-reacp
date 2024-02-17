@@ -31,5 +31,5 @@ const characters = [
 // const height = characters.map((char) => char.height);
 // const eye = characters.map((char) => char.eye_color);
 // console.log(height, eye);
-const firstName = characters.map((char) => char.name);
+const firstName = characters.map((char) => char.name.split(" ")[0]);
 console.log(firstName);
